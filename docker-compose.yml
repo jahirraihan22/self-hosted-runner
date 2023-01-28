@@ -2,9 +2,9 @@ version: "3"
 services:
     #PHP Service
     app:
-        # build:
-        #     context: .
-        #     dockerfile: Dockerfile
+        build:
+            context: .
+            dockerfile: Dockerfile
         image: "jahirraihan/php:8.1"
         container_name: app
         restart: unless-stopped
